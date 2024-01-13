@@ -1,5 +1,10 @@
 <script lang="ts">
-    const products = [
+    interface Product {
+        name: string;
+        image: string;
+    }
+
+    const products: Product[] = [
         {
             name: "snooker shirt",
             image: "/images/snooker_shirt_front.png",
@@ -7,14 +12,14 @@
         {
             name: "dividend shirt",
             image: "/images/dividend_shirt_front.png",
-        }
-    ]
+        },
+    ];
 </script>
 
 <div class="main">
     {#each products as product}
         <div class="product">
-            <img src={product.image} alt={product.name}>
+            <img src={product.image} alt={product.name} />
         </div>
     {/each}
 </div>
@@ -23,14 +28,17 @@
     .main {
         display: flex;
         flex-direction: column;
-        align-items: center;
         align-self: center;
+        /* align-items: center; */
         width: 80%;
         height: 100%;
         border: 10px #8fecf3 solid;
     }
 
     .product {
-
+        display: flex;
+        justify-content: center;
+        height: 50em;
+        padding: 4em;
     }
 </style>
