@@ -1,0 +1,16 @@
+package views
+
+type Product struct {
+	Name  string
+	Image string
+}
+
+templ Catalogue(products []Product) {
+	<div class="catalogue">
+		for _, product := range products {
+			<div class="product">
+				<img src={ product.Image } alt={ product.Name }/>
+			</div>
+		}
+	</div>
+}
