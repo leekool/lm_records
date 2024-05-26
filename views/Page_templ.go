@@ -10,10 +10,12 @@ import "context"
 import "io"
 import "bytes"
 
+import . "cool.com/test/services"
+
 func getProducts() []Product {
 	products := []Product{
-		{"snooker shirt", "/static/img/products/snooker_shirt/front.png"},
-		{"dividend shirt", "/static/img/products/dividend_shirt/front.png"},
+		{Name: "snooker shirt", Image: "/static/img/products/snooker_shirt/front.png"},
+		{Name: "dividend shirt", Image: "/static/img/products/dividend_shirt/front.png"},
 	}
 
 	return products
@@ -32,7 +34,7 @@ func Page() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templ.WriteWatchModeString(templ_7745c5c3_Buffer, 1)
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<html lang=\"en\"><head><meta charset=\"utf-8\"><link rel=\"icon\" href=\"\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>leatherman</title><link rel=\"stylesheet\" href=\"/static/css/styles.css\"><script src=\"/static/js/htmx.min.js\"></script></head><body><div class=\"main\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -44,7 +46,7 @@ func Page() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templ.WriteWatchModeString(templ_7745c5c3_Buffer, 2)
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</div></body></html>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -68,7 +70,7 @@ func Header() templ.Component {
 			templ_7745c5c3_Var2 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templ.WriteWatchModeString(templ_7745c5c3_Buffer, 3)
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"logo\"><img src=\"/static/img/logo.png\" alt=\"logo\"></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

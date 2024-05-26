@@ -1,9 +1,8 @@
 package views
 
-type Product struct {
-	Name  string
-	Image string
-}
+import (
+	. "cool.com/test/services"
+)
 
 templ Catalogue(products []Product) {
 	<div class="catalogue">

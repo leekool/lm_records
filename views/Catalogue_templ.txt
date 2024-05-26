@@ -1,5 +1,0 @@
-<div class=\"catalogue\">
-<div class=\"product\"><img src=\"
-\" alt=\"
-\"></div>
-</div>

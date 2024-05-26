@@ -1,9 +1,11 @@
 package views
 
+import . "cool.com/test/services"
+
 func getProducts() []Product {
 	products := []Product{
-		{"snooker shirt", "/static/img/products/snooker_shirt/front.png"},
-		{"dividend shirt", "/static/img/products/dividend_shirt/front.png"},
+		{ Name: "snooker shirt", Image: "/static/img/products/snooker_shirt/front.png"},
+		{ Name: "dividend shirt", Image: "/static/img/products/dividend_shirt/front.png"},
 	}
 
 	return products

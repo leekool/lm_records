@@ -8,6 +8,7 @@ body {
 .main {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .logo {
@@ -29,6 +30,12 @@ body {
 .product {
     display: flex;
     justify-content: center;
-    height: 50em;
+    padding: 0;
+    /* height: 50em; */
     padding: 4em;
+}
+
+.product > img {
+    max-width: 100%;
+    object-fit: cover;
 }

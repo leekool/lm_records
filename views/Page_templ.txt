@@ -1,3 +1,0 @@
-<html lang=\"en\"><head><meta charset=\"utf-8\"><link rel=\"icon\" href=\"\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>leatherman</title><link rel=\"stylesheet\" href=\"/static/css/styles.css\"><script src=\"/static/js/htmx.min.js\"></script></head><body><div class=\"main\">
-</div></body></html>
-<div class=\"logo\"><img src=\"/static/img/logo.png\" alt=\"logo\"></div>
