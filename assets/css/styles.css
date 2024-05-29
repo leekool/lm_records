@@ -29,6 +29,8 @@ body {
     background-image: url("/static/img/bg.svg");
     /* background-position: left 2rem center; */
     background-size: cover;
+    /* background-color: red; */
+    /* filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);  */
 }
 
 .main {
@@ -50,11 +52,14 @@ body {
     width: 80%;
     height: 100%;
     margin-bottom: 4rem;
-    /* border: 10px #8fecf3 solid; */
-    border: 10px #763e3a solid;
     background-color: #a4a4a40f;
     /* filter: invert(80%); */
     box-shadow: 1px 1px 15px 1px #0000005c;
+    /* border: 10px #8fecf3 solid; */
+    border: 10px #763e3a solid;
+    /* border: 10px transparent solid; */
+    /* backdrop-filter: blur(1.4px); */
+    /* backdrop-filter: invert(100%) opacity(80%); */
 }
 
 .catalogue > * {
@@ -67,6 +72,10 @@ body {
     padding: 0;
     /* height: 50em; */
     padding: 4em;
+}
+
+.product:hover {
+
 }
 
 .product>img {
