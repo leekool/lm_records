@@ -14,8 +14,20 @@ import . "cool.com/test/services"
 
 func getProducts() []Product {
 	products := []Product{
-		{Name: "snooker shirt", Image: "/static/img/products/snooker_shirt/front.png"},
-		{Name: "dividend shirt", Image: "/static/img/products/dividend_shirt/front.png"},
+		{
+			Name: "snooker shirt",
+			Images: Images{
+				Front: "/static/img/products/snooker_shirt/front.png",
+				Back:  "/static/img/products/snooker_shirt/back.png",
+			},
+		},
+		{
+			Name: "dividend shirt",
+			Images: Images{
+				Front: "/static/img/products/dividend_shirt/front.png",
+				Back:  "/static/img/products/dividend_shirt/back.png",
+			},
+		},
 	}
 
 	return products

@@ -8,7 +8,7 @@ templ Catalogue(products []Product) {
 	<div class="catalogue">
 		for _, product := range products {
 			<div class="product">
-				<img src={ product.Image } alt={ product.Name }/>
+				<img src={ product.Images.Front } alt={ product.Name }/>
 			</div>
 		}
 	</div>
